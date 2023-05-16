@@ -6,7 +6,9 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #35654d;
+    background-image: url("../Images/CasinoBG.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #game{
@@ -15,9 +17,11 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: rgb(103, 224, 143, 0.8);
+    background-color: rgb(103, 224, 143, 0.95);
     width: 600px;
     height: 320px;
+	background-repeat:no-repeat;
+    
 }
 
 #igralci {

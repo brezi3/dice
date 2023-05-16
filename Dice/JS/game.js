@@ -1,22 +1,3 @@
-function reloadPage() {
-    location.href='game.php';
-}
-
-function rezultati() {
-    location.href='rezultati.php';
-}
-
-setTimeout(function() {
-    document.getElementById('sestevek1').style.opacity = "1";}, 1250);
-setTimeout(function() {
-    document.getElementById('sestevek2').style.opacity = "1";}, 1250);
-setTimeout(function() {
-    document.getElementById('sestevek3').style.opacity = "1";}, 1250);
-setTimeout(function() {
-    document.getElementById('sestevek4').style.opacity = "1";}, 1250);
-setTimeout(function() {
-    document.getElementById('sestevek5').style.opacity = "1";}, 1250);
-
 function animkocke1() {
     setTimeout("document.getElementById('anim1').style.display = 'none'; document.getElementById('kocke1').style.display = 'inline-block';",1200);
 }

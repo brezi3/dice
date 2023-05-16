@@ -6,7 +6,9 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #35654d;
+    background-image: url("../Images/CasinoBG.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #game{
@@ -14,7 +16,7 @@ body{
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(103, 224, 143, 0.8);
+    background-color: rgb(103, 224, 143, 0.95);
     width: 600px;
     height: 300px;
     display: flex;

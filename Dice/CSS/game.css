@@ -6,7 +6,9 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #35654d;
+    background-image: url("../Images/CasinoBG.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #game{
@@ -15,7 +17,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     align-items: center;
-    background-color: rgb(103, 224, 143, 0.8);
+    background-color: rgb(103, 224, 143, 0.95);
     width: 600px;
     height: 500px;
     
@@ -34,7 +36,6 @@ body{
    border: none;
    border-radius: 5px;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-   transition: background-color 0.3s ease;
  }
  
  .gumb:hover {

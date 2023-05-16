@@ -5,6 +5,7 @@
     <title>Dice</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="icon" type="image/x-icon" href="images/diceV2.png">
+    <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
@@ -49,47 +50,6 @@
     <div class="diceDesno">
         <img id="diceDesno" src="images/DiceV2.png" alt="diceDesna">
     </div>
-
-    <script>
-        function generatePlayerFields() {
-            var numPlayers = document.getElementById("numPlayers").value;
-            var playerFieldsContainer = document.getElementById("playerFields");
-            playerFieldsContainer.innerHTML = ""; // Clear previous fields
-
-            for (var i = 1; i <= numPlayers; i++) {
-                var playerNameField = document.createElement("div");
-                playerNameField.className = "player";
-                playerNameField.innerHTML = "PLAYER " + i + " Name: <input type='text' name='name" + i + "' autofocus>";
-                playerFieldsContainer.appendChild(playerNameField);
-            }
-        }
-
-        // Check if player name fields are empty
-        function isEmpty() {
-            var numPlayers = document.getElementById("numPlayers").value;
-
-            if (numPlayers == 0) {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Please select at least one player!',
-                });
-                return false;
-            }
-
-            for (var i = 1; i <= numPlayers; i++) {
-                if (document.forms['forma']["name" + i].value == "") {
-                    Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Enter all names!',
-                    });
-                    return false;
-                }
-            }
-            return true;
-        }
-    </script>
 
 </body>
 
