@@ -44,7 +44,14 @@ session_start();
         <img id="diceDesno" src="images/DiceV2.png" alt="diceDesna">
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="jquery.fireworks.js"></script>
     <script>
+        $('body').fireworks({
+            opacity: 0.1,
+            width: '100%',
+            height: '100%'
+        });
         function redirTimer() {
             var countdown = 10; //sekunde countdawn-a
             var timerElement = document.getElementById("timer");
